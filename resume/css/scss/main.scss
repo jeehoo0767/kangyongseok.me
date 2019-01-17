@@ -1,0 +1,183 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Open+Sans');
+
+// mixin
+@mixin absolute($top, $right, $bottom, $left){
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin profileRadius($width, $height,  $radius) {
+    width:$width;
+    height:$height;
+    border-radius: $radius;
+}
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin textBox($width, $height, $radius) {
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+}
+
+// 변수
+$font-family: 'Open Sans', 'Noto Sans KR', sans-serif;
+$textBoxBg: #20232A;
+
+
+html, body {
+    width:100%;
+    height:100%;
+    font:100% $font-family;
+}
+
+ul {
+    list-style: none;
+}
+
+
+// header
+#header-area {
+    width:100%;
+    @include absolute(0, inital, inital, 0);
+    z-index: 10;
+    background:rgba(0, 0, 0, 0.5);
+
+    header{
+        ul {
+            overflow: auto;
+            height:4rem;
+        }
+    }
+
+    li {
+        float:left;
+        a {
+            color:white;
+            text-decoration: none;
+            display: block;
+            padding:1.3rem 3rem;
+        }
+    }
+
+    .active {
+        background: $textBoxBg;
+    }
+}
+
+#contents-area {
+    .profile-circle {
+        @include profileRadius(40rem, 40rem, 40rem);
+        @include absolute(10rem, inital, inital, 0);
+        @include flexCenter;
+        background: rgba(255, 255, 255, 0.5);
+        opacity: 0;
+        z-index: 10;
+
+        &:after {
+            @include profileRadius(37rem, 37rem, 37rem);
+            content:'';
+            display: block;
+            background: greenyellow;
+            background: url("../img/profile.jpg") no-repeat 50% 50%;
+            background-size: 37rem;
+        }
+    }
+
+    .intro-box {
+        @include profileRadius(40rem, 30rem, 1rem);
+        @include absolute(0, inital, inital, 50rem);
+        background: $textBoxBg;
+        opacity: 0;
+        z-index: 9;
+        padding:2rem;
+        padding-left:8rem;
+        box-sizing: border-box;
+
+        .intro-txt {
+            color:white;
+            vertical-align: bottom;
+            .name {
+                text-align: center;
+                font-size:2rem;
+                margin-bottom:0.5rem;
+            }
+
+            .job {
+                text-align: center;
+            }
+
+            li {
+                margin-top:1rem;
+                text-align: left;
+                margin-left:5rem;
+                i {
+                    font-size:1.3rem;
+                    vertical-align: bottom;
+                    width:2rem;
+                    text-align: center;
+                }
+    
+                a {
+                    color:white;
+                    &:hover {
+                        color:yellow;
+                    }
+                }
+            }
+
+            .simple-introduce {
+                line-height:1.7rem;
+                text-align: center;
+                margin:2rem 0;
+            }
+        }
+    }
+
+    // section2
+    .section2  {
+        .fp-tableCell {
+            @include flexCenter;
+        }
+
+        .info {
+            @include flexCenter;
+            width:100%;
+            height:100%;
+
+            .icon-area {
+                @include textBox(20rem, 40rem, 1rem);
+                @include flexCenter;
+                flex-direction: column;
+                text-align: center;
+                margin-right:1rem;
+                background: rgba(255, 255, 255, 0.5);
+                color:white;
+                font-size:10rem;
+                p {
+                    font-size:3rem;
+                }
+            }
+        }
+
+        .center-line {
+            border-right:1px solid white;
+            height:100%;
+        }
+
+        .text-box {
+            @include textBox(30rem, 40rem, 1rem);
+            background: $textBoxBg;
+            color:white;
+        }
+        
+    }
+}
