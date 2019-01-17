@@ -5,8 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>강용석 | 프론트엔드개발자</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js"
+    crossorigin="anonymous"></script>
+    <script src="./js/fullpageOption.js"></script>
+    <script src="./js/animate.js"></script>
 </head>
 <body>
-    test
+    <div id="wrap">
+        <div id="header-area">
+            <header class="header">
+                <nav class="nav">
+                    <ul id="menu">
+                        <li data-menuanchor="Introduce" class="active"><a href="#Introduce"><i class="far fa-user-circle"></i> Introduce</a></li>
+                        <li data-menuanchor="secondPage"><a href="#secondPage">Menu2</a></li>
+                        <li data-menuanchor="thirdPage"><a href="#thirdPage">Menu3</a></li>
+                        <li data-menuanchor="fourPage"><a href="#fourPage">Menu4</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div id="contents-area">
+            <div id="fullpage">
+                <div class="section" data-anchor="slide1">
+                    <div class="profile-circle js-circle"></div>
+                    <div class="intro-box js-intro-box">
+                        <div class="intro-txt">
+                            <p class="job">Web Frontend Developer</p>
+                            <h1 class="name">YongSeok Kang</h1>
+                            <p class="simple-introduce">
+                                퍼블리싱 가능한 신입 프론트엔드개발자 강용석입니다<br/>
+                                어떻게하면 좋은 코드를 작성할지 고민합니다<br/>
+                                어제보다 나은 개발자가 되기 위해 노력합니다<br/>
+                                취미와 특기는 운영중인 블로그와 깃헙 개편하기 입니다<br/>
+                                코드리뷰 당하고 싶습니다<br/>
+                            </p>
+                            <ul>
+                                <li class="email">
+                                    <i class="far fa-envelope"></i>
+                                    <a href="mailto:kangyongsuek@gmail.com" target="_blank">kangyongsuek@gmail.com</a>
+                                </li>
+                                <li class="git">
+                                    <i class="fab fa-github"></i> 
+                                    <a href="https://github.com/kangyongseok" target="_blank">https://github.com/kangyongseok</a>
+                                </li>
+                                <li class="blog">
+                                    <i class="far fa-bookmark"></i>
+                                    <a href="http://code-reading.tistory.com" target="_blank">http://code-reading.tistory.com</a>
+                                </li>
+                                <li class="address">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <a href="https://map.naver.com/?query=%EA%B2%BD%EA%B8%B0%EB%8F%84+%EA%B3%A0%EC%96%91%EC%8B%9C+%EB%8D%95%EC%96%91%EA%B5%AC+%EC%9D%BC%EC%82%B0%EB%8F%99%EA%B5%AC+%EB%8F%99%EA%B5%AD%EB%A1%9C+197%EB%B2%88%EA%B8%B8+113+%ED%94%84%EB%9D%BC%EC%9E%84%ED%95%98%EC%9A%B0%EC%8A%A4&type=SITE_1&siteOrder=" target="_blank">경기도 고양시 일산동구 동국로 197번길 113</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="section section2" data-anchor="slide2">
+                    <div class="info">
+                        <div class="icon-area">
+                            <i class="fas fa-user-graduate"></i>
+                            <p>Education</p>
+                        </div>
+                        <div class="text-box">
+                            <div>
+                                <h3>동양대학교</h3>
+                            </div>
+                            <div>
+                                <h3>행신고등학교</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center-line"></div>
+                    <div class="info">
+                        <div class="icon-area">
+                            <i class="fas fa-building"></i>
+                            <p>Career</p>
+                        </div>
+                        <div class="text-box"></div>
+                    </div>
+                </div>
+                <div class="section" data-anchor="slide3">Some section3</div>
+                <div class="section" data-anchor="slide4">Some section4</div>
+            </div>
+        </div>
+    </div>
+    
 </body>
 </html>
