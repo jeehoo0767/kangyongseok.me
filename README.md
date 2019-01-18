@@ -1,7 +1,8 @@
 # 프론트엔드 개발자 이력서
 
 ![fullPage.js](https://img.shields.io/badge/fullPage.js-v2.9.7-blue.svg)
-![jQuert](https://img.shields.io/badge/jQuery-v3.3.1-blue.svg)
+![jQuery](https://img.shields.io/badge/jQuery-v3.3.1-blue.svg)
+![underscore.js](https://img.shields.io/badge/underscore.js-Dev%20v1.9.1-blue.svg)
 
 - [바로가기](https://kangyongseok.github.io/kangyongseok.me/resume)
 
@@ -12,7 +13,7 @@
 - javascript
 - jQuery
 
-## 사용한 Tool
+## 사용한 Tool 
 - Visual Studio Code
 
 ## 라이브러리
@@ -20,6 +21,9 @@
     - `3.0` 이상 버전에서부터는 사용하려면 `licenseKey` 가 필요하기때문에 `2.` 대 버전중 가장 높은 버전 사용 
 - [FontAwesome](https://fontawesome.com/)
     - Free Icon 사용, 단점은 아이콘 로딩때문에 깜빡이는 현상이 있음
+- [underscore.js](https://underscorejs.org/)
+    - javascript 에 있는 기본 함수 및 메서드들의 기능을 확장해서 사용할 수 있도록 하는 함수들의 모음 라이브러리
+
 
 
 ## 포함된 내용
