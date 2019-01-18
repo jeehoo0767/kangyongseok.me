@@ -131,7 +131,15 @@ ul {
 #contents-area .intro-box .intro-txt .simple-introduce {
   line-height: 1.7rem;
   text-align: center;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
+}
+
+#contents-area .section2 .fp-slidesNav {
+  text-align: center;
+}
+
+#contents-area .section2 .fp-slidesNav .active span {
+  background: white;
 }
 
 #contents-area .section2 .fp-tableCell {
@@ -188,15 +196,113 @@ ul {
   font-size: 3rem;
 }
 
-#contents-area .section2 .center-line {
-  border-right: 1px solid white;
-  height: 100%;
-}
-
 #contents-area .section2 .text-box {
   width: 30rem;
   height: 40rem;
   border-radius: 1rem;
   background: #20232A;
   color: white;
+  padding: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#contents-area .section2 .text-box .list {
+  margin-bottom: 0.5rem;
+}
+
+#contents-area .section2 .text-box h3 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#contents-area .section2 .text-box h3 span {
+  font-size: 0.8rem;
+  color: #666666;
+}
+
+#contents-area .section2 .text-box table td {
+  padding: 5px;
+}
+
+#contents-area .section2 .text-box table button {
+  border: none;
+  background: #4267B2;
+  color: white;
+  vertical-align: top;
+  line-height: 1;
+  padding: 0.5rem;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+#contents-area .section2 .text-box table button:hover {
+  background: #1a459b;
+}
+
+#contents-area .section2 .text-box-slide {
+  width: 70%;
+  height: 40rem;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+  padding: 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  font-size: 2rem;
+  z-index: 3;
+}
+
+#contents-area .section2 .text-box-slide h3 {
+  margin-right: auto;
+  margin-top: auto;
+}
+
+#contents-area .section2 .text-box-slide .question {
+  position: absolute;
+  top: -10rem;
+  right: inital;
+  bottom: inital;
+  left: -10rem;
+  font-size: 20rem;
+  color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+
+#contents-area .section2 .text-box-slide p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  line-height: 2.7rem;
+}
+
+#contents-area .section2 .text-box-slide p span {
+  font-weight: 600;
+}
+
+#contents-area .section2 .text-box-slide p .google-color {
+  color: #E34133;
+}
+
+#contents-area .section2 .text-box-slide p .facebook-color {
+  color: #395693;
+}
+
+#contents-area .section2 .text-box-slide p .kakao-color {
+  color: #F7D500;
 }

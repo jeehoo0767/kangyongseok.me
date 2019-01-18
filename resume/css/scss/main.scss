@@ -137,13 +137,19 @@ ul {
             .simple-introduce {
                 line-height:1.7rem;
                 text-align: center;
-                margin:2rem 0;
+                margin:1.5rem 0;
             }
         }
     }
 
     // section2
     .section2  {
+        .fp-slidesNav {
+            text-align: center;
+            .active span {
+                background: white;
+            }
+        }
         .fp-tableCell {
             @include flexCenter;
         }
@@ -168,15 +174,83 @@ ul {
             }
         }
 
-        .center-line {
-            border-right:1px solid white;
-            height:100%;
-        }
-
         .text-box {
             @include textBox(30rem, 40rem, 1rem);
             background: $textBoxBg;
             color:white;
+            padding:1rem;
+            box-sizing: border-box;
+            .list {
+                margin-bottom:0.5rem;
+            }
+            h3 {
+                font-size:1.5rem;
+                border-bottom:1px solid #eeeeee;
+                padding-bottom:0.5rem;
+                margin-bottom:0.5rem;
+                span {
+                    font-size:0.8rem;
+                    color:#666666;
+                }
+            }
+            table {
+                td {
+                    padding:5px;
+                }
+                button {
+                    border:none;
+                    background:#4267B2;
+                    color:white;
+                    vertical-align: top;
+                    line-height:1;
+                    padding:0.5rem;
+                    cursor: pointer;
+                    margin-left:1rem;
+                    &:hover {
+                        background:rgb(26, 69, 155);
+                    }
+                }
+            }
+        }
+
+        .text-box-slide {
+            @include textBox(70%, 40rem, 1rem);
+            @include flexCenter;
+            flex-direction: column;
+            background: rgba(255, 255, 255, 0.5);
+            color:black;
+            padding:2rem;
+            box-sizing: border-box;
+            position:relative;
+            font-size:2rem;
+            z-index: 3;
+            h3 {
+                margin-right:auto;
+                margin-top:auto;
+            }
+            .question {
+                @include absolute(-10rem, inital, inital, -10rem);
+                font-size:20rem;
+                color:rgba(255, 255, 255, 0.2);
+                z-index: -1;
+            }
+            p {
+                font-size:1.5rem;
+                margin-top:1rem;
+                line-height: 2.7rem;
+                span {
+                    font-weight: 600;
+                }
+                .google-color{
+                    color:#E34133;
+                }
+                .facebook-color{
+                    color:#395693;
+                }
+                .kakao-color{
+                    color:#F7D500;
+                }
+            }
         }
         
     }
