@@ -18,6 +18,8 @@
     crossorigin="anonymous"></script>
     <script src="./js/fullpageOption.js"></script>
     <script src="./js/animate.js"></script>
+    <script src="./js/undescore.js"></script>
+    <script async src="./js/modal.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -138,6 +140,8 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="slide">
                         <div class="info">
                             <div class="icon-area">
                                 <i class="fas fa-building"></i>
@@ -160,7 +164,7 @@
                                     </tr>
                                     <tr>
                                         <td>담당업무</td>
-                                        <td>퍼블리싱 / 유지보수 및 운영 <button>자세히보기</button></td>
+                                        <td>퍼블리싱 / 유지보수 및 운영 <button name="inforang" class="detail" type="button">자세히보기</button></td>
                                     </tr>
                                 </table>
 
@@ -180,7 +184,7 @@
                                     </tr>
                                     <tr>
                                         <td>담당업무</td>
-                                        <td>부서홈페이지 구축과정에 참여 <button>자세히보기</button></td>
+                                        <td>부서홈페이지 구축과정에 참여 <button class="detail" type="button" name="kotra">자세히보기</button></td>
                                     </tr>
                                 </table>
 
@@ -228,13 +232,52 @@
                             </p>
                         </div>
                     </div>
-                    <div class="slide"></div>
+                    
                 </div>
                 <div class="section" data-anchor="slide3">Some section3</div>
                 <div class="section" data-anchor="slide4">Some section4</div>
             </div>
         </div>
     </div>
-    
+    <div class="modal-area js-modal">
+        <div class="career-description inforang">
+            <h3>(주)인포랑 <span><a href="http://www.medrang.co.kr/#intro" target="_blank">홈페이지</a></span></h3>
+            <h4>담당업무</h4>
+            <p>
+                에이전시 인력만 약 20명정도 구성되어있었고 그중에 운영부서는 총원 4명이서 1인당 약 60개의 담당 학회홈페이지와 학술행사 홈페이지를 고객과 직접 컨텍하며 유지보수 및 운영 그리고 부분 퍼블리싱을 담당하였습니다.
+            </p>
+            <h4>개선사항</h4>
+            <p>
+                다양한 홈페이지 제작이 아닌 의학분야의 특정 기능과 특정 페이지에서 벗어나는 부분이 없었습니다. 그래서 단순 반복수정 및 페이징 업무가 주어졌었는데 이 반복적인 업무와 코드작성에 대해서 어떠한 기준도 관리도 없이 개별적인 중구난방의 코드 작성이 이루어 졌습니다. 회사에 건의도 하였지만 진행중이라는 말만 되풀이 될뿐 개선사항이 없어 운영부서 내부에서라도 업무의 80% 이상을 차지하는 코드작성에 대해서 규칙을 정하고 문서를 작성하여 운영되도록 하였습니다.<br/>
+                플래시로 되어있는 부분이 많았기때문에 모바일환경에서 메뉴나 배너를 볼 수 없는 경우가 많았습니다. 업무를 진행하며 들어온 요청뿐만아니라 자체적으로 플래시코드는 보일때마다 수정개선을 진행하였습니다.
+            </p>
+            <h4>주요담당학회홈페이지</h4>
+            <ul>
+                <li>
+                    <a href="http://www.anesthesia.or.kr/" target="_blank">대한마취통증의학회</a>
+                </li>
+                <li>
+                    <a href="http://www.painfree.or.kr/main.html" target="_blank">대한통증학회</a>
+                </li>
+                <li>
+                    <a href="http://www.ksus.or.kr/" target="_blank">대한외과초음파학회</a>
+                </li>
+                <li><a href="http://www.kahbps.or.kr/" target="_blank">한국간담췌외과학회</a></li>
+                <li><a href="http://www.urology.or.kr/" target="_blank">대한비뇨기과학회</a></li>
+            </ul>
+        </div>
+        <div class="career-description kotra">
+            <h3>KOTRA 외국기업고충처리단 <span><a href="http://www.investkorea.org/kr/index.do" target="_blank">홈페이지</a></span></h3>
+            <h4>담당업무</h4>
+            <p>
+                대한무역투자진흥공사에 외국기업고충처리단 부서의 홈페이지 제작하는 사업에 파견계약직으로 투입되었었고 주 업무는 직접적인 코딩보다는 중간에서 프로젝트매니저 역할을 하였습니다. <br/>
+                개발과 디자인은 외주를 맡겨 외부업체가 상주하며 프로젝트를 진행하였었고 중간에서 여러 문서작업과 간단한 퍼블리싱 화면구현으로 본사 직원과 외주업체와의 소통창구 역할을 하였습니다.<br/>
+                구축이 완료된후에는 운영업무 담당하며 다른 인턴들의 업무도 병행하였습니다.
+            </p>
+        </div>
+        <button type="button" class="close-btn" name="close">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
 </body>
 </html>
