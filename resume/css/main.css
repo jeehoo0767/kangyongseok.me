@@ -9,6 +9,61 @@ ul {
   list-style: none;
 }
 
+.modal-area {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+
+.modal-area .career-description {
+  background: white;
+  width: 40%;
+  height: auto;
+  margin: 2% auto;
+  position: relative;
+  padding: 2rem 4rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.7rem;
+}
+
+.modal-area .career-description h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.modal-area .career-description h3 span {
+  font-size: 1rem;
+}
+
+.modal-area .career-description h4 {
+  margin: 1rem 0 0.3rem 0;
+}
+
+.modal-area .close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  bottom: inital;
+  left: inital;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  z-index: 9999;
+}
+
+.modal-area .kotra {
+  margin-top: 10%;
+}
+
 #header-area {
   width: 100%;
   position: absolute;
@@ -244,7 +299,7 @@ ul {
 
 #contents-area .section2 .text-box-slide {
   width: 70%;
-  height: 40rem;
+  height: auto;
   border-radius: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;

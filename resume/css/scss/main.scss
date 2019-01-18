@@ -28,6 +28,15 @@
     border-radius: $radius;
 }
 
+@mixin btn($bg, $border, $fontSize, $fontColor) {
+    background: $bg ;
+    border: $border ;
+    font-size: $fontSize ;
+    color:$fontColor;
+    cursor:pointer;
+    outline: none;
+}
+
 // 변수
 $font-family: 'Open Sans', 'Noto Sans KR', sans-serif;
 $textBoxBg: #20232A;
@@ -41,6 +50,42 @@ html, body {
 
 ul {
     list-style: none;
+}
+
+.modal-area {
+    @include absolute(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+    
+    .career-description {
+        background: white;
+        width:40%;
+        height:auto;
+        margin:2% auto;
+        position: relative;
+        padding:2rem 4rem;
+        box-sizing: border-box;
+        line-height:1.7rem;
+        h3 {
+            font-size:2rem;
+            margin-bottom:2rem;
+            span {
+                font-size:1rem;
+            }
+        }
+        h4 {
+            margin:1rem 0 0.3rem 0;
+        }
+    }
+    .close-btn {
+        @include absolute(1rem, 1rem, inital, inital);
+        @include btn(none, none, 2rem, white);
+        z-index: 9999;
+    }
+    .kotra {
+        margin-top:10%;
+    }
 }
 
 
@@ -214,7 +259,7 @@ ul {
         }
 
         .text-box-slide {
-            @include textBox(70%, 40rem, 1rem);
+            @include textBox(70%, auto, 1rem);
             @include flexCenter;
             flex-direction: column;
             background: rgba(255, 255, 255, 0.5);
