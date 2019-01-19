@@ -1,4 +1,4 @@
-# 프론트엔드 개발자 이력서
+# 프론트엔드 개발자 이력서 (진행중)
 
 ![fullPage.js](https://img.shields.io/badge/fullPage.js-v2.9.7-blue.svg)
 ![jQuery](https://img.shields.io/badge/jQuery-v3.3.1-blue.svg)
