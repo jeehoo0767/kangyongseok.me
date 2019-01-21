@@ -1,4 +1,4 @@
-# 프론트엔드 개발자 이력서 (진행중)
+# 프론트엔드 개발자 이력서 (작성중)
 
 ![fullPage.js](https://img.shields.io/badge/fullPage.js-v2.9.7-blue.svg)
 ![jQuery](https://img.shields.io/badge/jQuery-v3.3.1-blue.svg)
@@ -23,7 +23,6 @@
     - Free Icon 사용, 단점은 아이콘 로딩때문에 깜빡이는 현상이 있음
 - [underscore.js](https://underscorejs.org/)
     - javascript 에 있는 기본 함수 및 메서드들의 기능을 확장해서 사용할 수 있도록 하는 함수들의 모음 라이브러리
-
 
 
 ## 포함된 내용
