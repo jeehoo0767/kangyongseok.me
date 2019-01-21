@@ -267,11 +267,11 @@ ul {
             padding:2rem;
             box-sizing: border-box;
             position:relative;
-            font-size:2rem;
+            font-size:1.7rem;
             z-index: 3;
             h3 {
                 margin-right:auto;
-                margin-top:auto;
+                margin-top:1.5rem;
             }
             .question {
                 @include absolute(-10rem, inital, inital, -10rem);
@@ -280,9 +280,9 @@ ul {
                 z-index: -1;
             }
             p {
-                font-size:1.5rem;
+                font-size:1.3rem;
                 margin-top:1rem;
-                line-height: 2.7rem;
+                line-height: 2.3rem;
                 span {
                     font-weight: 600;
                 }
@@ -293,7 +293,11 @@ ul {
                     color:#395693;
                 }
                 .kakao-color{
-                    color:#F7D500;
+                    color:rgb(27, 119, 50);
+                }
+
+                b {
+                    color:#E34133;
                 }
             }
         }

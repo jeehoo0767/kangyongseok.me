@@ -320,13 +320,13 @@ ul {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
-  font-size: 2rem;
+  font-size: 1.7rem;
   z-index: 3;
 }
 
 #contents-area .section2 .text-box-slide h3 {
   margin-right: auto;
-  margin-top: auto;
+  margin-top: 1.5rem;
 }
 
 #contents-area .section2 .text-box-slide .question {
@@ -341,9 +341,9 @@ ul {
 }
 
 #contents-area .section2 .text-box-slide p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-top: 1rem;
-  line-height: 2.7rem;
+  line-height: 2.3rem;
 }
 
 #contents-area .section2 .text-box-slide p span {
@@ -359,5 +359,9 @@ ul {
 }
 
 #contents-area .section2 .text-box-slide p .kakao-color {
-  color: #F7D500;
+  color: #1b7732;
+}
+
+#contents-area .section2 .text-box-slide p b {
+  color: #E34133;
 }
