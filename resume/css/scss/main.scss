@@ -275,7 +275,8 @@ ul {
             }
             .question {
                 @include absolute(-10rem, inital, inital, -10rem);
-                font-size:20rem;
+                font-size:15rem;
+                font-weight: bold;
                 color:rgba(255, 255, 255, 0.2);
                 z-index: -1;
             }
@@ -299,6 +300,11 @@ ul {
                 b {
                     color:#E34133;
                 }
+            }
+
+            .skiil-icon {
+                font-size:5rem;
+                color:white;
             }
         }
         

@@ -335,7 +335,8 @@ ul {
   right: inital;
   bottom: inital;
   left: -10rem;
-  font-size: 20rem;
+  font-size: 15rem;
+  font-weight: bold;
   color: rgba(255, 255, 255, 0.2);
   z-index: -1;
 }
@@ -364,4 +365,9 @@ ul {
 
 #contents-area .section2 .text-box-slide p b {
   color: #E34133;
+}
+
+#contents-area .section2 .text-box-slide .skiil-icon {
+  font-size: 5rem;
+  color: white;
 }
